@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <script src="https://kit.fontawesome.com/025617722e.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="navbar-brand"><img src="images/logo.svg" alt="Snap"></a>
+      <ul class="nav-list">
+        <li onclick="showMenu()" class="nav-item">
+          <div class="dropdown nav-link">
+            <button class="dropbtn">Features 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#"><img src="images/icon-todo.svg" alt="Todo List"> Todo List</a>
+              <a href="#"><img src="images/icon-calendar.svg" alt="Calendar">Calendar</a>
+              <a href="#"><img src="images/icon-reminders.svg" alt="Reminders">Reminders</a>
+              <a href="#"><img src="images/icon-planning.svg" alt="Planning">Planning</a>
+            </div>
+          </div> 
+        </li>
+        <li onclick="showMenu()" class="nav-item">
+          <div class="dropdown nav-link">
+            <button class="dropbtn">Company 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+        </li>
+        <li onclick="showMenu()" class="nav-item">
+          <a class="nav-link" href="#"> Careers </a>
+        </li>
+        <li onclick="showMenu()" class="nav-item">
+          <a class="nav-link" href="#"> About </a>
+        </li>
+        <div>
+          <ul>
+            <li onclick="showMenu()" class="nav-item">
+              <a class="nav-link" href="#"> Login </a>
+            </li>
+            <li onclick="showMenu()" class="nav-item">
+              <a class="nav-link" href="#"> Register </a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <div class="menu-toggle">
+        <div onclick="showMenu()" class="hamburger"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero-section">
+      <div>
+        <h1>Make Remote Work</h1>
+        <p>Get your team in sync, no matter your locaiton. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <a href="#">Learn More</a>
+        <div>
+          <img src="images/client-databiz.svg" alt="databiz">
+          <img src="images/client-audiophile.svg" alt="audiophile">
+          <img src="images/client-meet.svg" alt="meet">
+          <img src="images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+      <div>
+        <picture>
+          <source 
+             media="(orientation: landscape)"
+             srcset="images/image-hero-desktop.png">
+          <source 
+             media="(orientation: portrait)"
+             srcset="images/image-hero-mobile.png">
+        <img src="images/image-hero-mobile.png" width="100%" height="auto">
+       </picture>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sabrina Grivas</a>.
+  </div>
+</body>
+</html>
