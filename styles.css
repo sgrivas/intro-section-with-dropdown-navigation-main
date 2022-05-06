@@ -1,8 +1,87 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 98%);
+}
+/* Hero Section */
 .hero-section{
     display: grid;
+    text-align: center;
+    margin: 20px 0;
+}
+.hero-text{
+    margin: 0 15px;
+    display: grid;
+    align-items: end;
+}
+.hero-section h1{
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    font-size: 2rem;
+    padding: 20px 0;
+}
+.hero-section p{
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+}
+.hero-image{
+    order: -1;
+}
+.cta-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 30px 0;
+}
+.clients{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 0px 20px; 
+}
+.clients img{
+    max-width: 100%;
+}
+/* Footer */
+footer{
+    background-color: hsl(0, 0%, 41%);
+    text-align: center;
+    padding: 20px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 15%;
+}
+footer p,
+a{
+    font-size: .8rem;
+    color: hsl(0, 0%, 98%);
 }
 @media screen and (min-width: 992px) {
     .hero-section{
         grid-template-columns: repeat(2, 1fr); 
+        align-items: stretch;
+        text-align: left;
+        gap: 0 5%;
+        margin: 0 10%;
+    }
+    .hero-text h1{
+        font-size: 4rem;
+    }
+    .hero-image{
+        order: 1;
+    }
+}
+@media screen and (min-width: 1200px){
+    .hero-image{
+        max-width: 80%;
+        margin: 0 auto;
     }
 }
