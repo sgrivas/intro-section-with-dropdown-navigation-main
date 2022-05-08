@@ -23,38 +23,41 @@
     <nav class="navbar">
       <a class="navbar-brand"><img src="images/logo.svg" alt="Snap"></a>
       <ul class="nav-list">
-        <li onclick="showMenu()" class="nav-item">
-          <div class="dropdown nav-link">
-            <button class="dropbtn">Features 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#"><img src="images/icon-todo.svg" alt="Todo List"> Todo List</a>
-              <a href="#"><img src="images/icon-calendar.svg" alt="Calendar">Calendar</a>
-              <a href="#"><img src="images/icon-reminders.svg" alt="Reminders">Reminders</a>
-              <a href="#"><img src="images/icon-planning.svg" alt="Planning">Planning</a>
+        <div class="nav-left">
+          <li onclick="showMenu()" class="nav-item">
+            <div class="dropdown nav-link">
+              <button class="dropbtn">Features 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"><img src="images/icon-todo.svg" alt="Todo List"> Todo List</a>
+                <a href="#"><img src="images/icon-calendar.svg" alt="Calendar">Calendar</a>
+                <a href="#"><img src="images/icon-reminders.svg" alt="Reminders">Reminders</a>
+                <a href="#"><img src="images/icon-planning.svg" alt="Planning">Planning</a>
+              </div>
+            </div> 
+          </li>
+          <li onclick="showMenu()" class="nav-item">
+            <div class="dropdown nav-link">
+              <button class="dropbtn">Company 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
             </div>
-          </div> 
-        </li>
-        <li onclick="showMenu()" class="nav-item">
-          <div class="dropdown nav-link">
-            <button class="dropbtn">Company 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">History</a>
-              <a href="#">Our Team</a>
-              <a href="#">Blog</a>
-            </div>
-          </div>
-        </li>
-        <li onclick="showMenu()" class="nav-item">
-          <a class="nav-link" href="#"> Careers </a>
-        </li>
-        <li onclick="showMenu()" class="nav-item">
-          <a class="nav-link" href="#"> About </a>
-        </li>
-        <div>
+          </li>
+          <li onclick="showMenu()" class="nav-item">
+            <a class="nav-link" href="#"> Careers </a>
+          </li>
+          <li onclick="showMenu()" class="nav-item">
+            <a class="nav-link" href="#"> About </a>
+          </li>
+        </div>
+        
+        <div class="nav-right">
           <ul>
             <li onclick="showMenu()" class="nav-item">
               <a class="nav-link" href="#"> Login </a>
@@ -102,5 +105,7 @@
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
     <p>Coded by <a href="#">Sabrina Grivas</a>.</p>
   </footer>
+
+  <script src="navigation.js"></script>
 </body>
 </html>
