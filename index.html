@@ -22,8 +22,7 @@
   <header>
     <nav class="navbar">
       <a class="navbar-brand"><img src="images/logo.svg" alt="Snap"></a>
-      <ul class="nav-list">
-        <div class="nav-left">
+      <ul class="nav-list grow">
           <li onclick="showMenu()" class="nav-item">
             <div class="dropdown nav-link">
               <button class="dropbtn">Features 
@@ -55,19 +54,15 @@
           <li onclick="showMenu()" class="nav-item">
             <a class="nav-link" href="#"> About </a>
           </li>
-        </div>
-        
-        <div class="nav-right">
-          <ul>
-            <li onclick="showMenu()" class="nav-item">
-              <a class="nav-link" href="#"> Login </a>
-            </li>
-            <li onclick="showMenu()" class="nav-item">
-              <a class="nav-link" href="#"> Register </a>
-            </li>
-          </ul>
-        </div>
       </ul>
+        <ul class="nav-list">
+          <li onclick="showMenu()" class="nav-item">
+            <a class="nav-link" href="#"> Login </a>
+          </li>
+          <li onclick="showMenu()" class="nav-item">
+            <a class="nav-link register-btn" href="#"> Register </a>
+          </li>
+        </ul>
       <div class="menu-toggle">
         <div onclick="showMenu()" class="hamburger"></div>
       </div>
