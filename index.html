@@ -23,30 +23,22 @@
     <nav class="navbar">
       <a class="navbar-brand"><img src="images/logo.svg" alt="Snap"></a>
       <ul class="nav-list grow">
-          <li onclick="showMenu()" class="nav-item">
-            <div class="dropdown nav-link">
-              <button class="dropbtn">Features 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#"><img src="images/icon-todo.svg" alt="Todo List"> Todo List</a>
+          <li class="nav-item">
+            <details>
+              <summary>Features</summary>
+              <a href="#"><img src="images/icon-todo.svg" alt="Todo List"> Todo List</a>
                 <a href="#"><img src="images/icon-calendar.svg" alt="Calendar">Calendar</a>
                 <a href="#"><img src="images/icon-reminders.svg" alt="Reminders">Reminders</a>
                 <a href="#"><img src="images/icon-planning.svg" alt="Planning">Planning</a>
-              </div>
-            </div> 
+            </details>
           </li>
-          <li onclick="showMenu()" class="nav-item">
-            <div class="dropdown nav-link">
-              <button class="dropbtn">Company 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">History</a>
+          <li class="nav-item">
+            <details>
+              <summary>Company</summary>
+              <a href="#">History</a>
                 <a href="#">Our Team</a>
                 <a href="#">Blog</a>
-              </div>
-            </div>
+            </details>
           </li>
           <li onclick="showMenu()" class="nav-item">
             <a class="nav-link" href="#"> Careers </a>
@@ -54,12 +46,10 @@
           <li onclick="showMenu()" class="nav-item">
             <a class="nav-link" href="#"> About </a>
           </li>
-      </ul>
-        <ul class="nav-list">
-          <li onclick="showMenu()" class="nav-item">
+          <li onclick="showMenu()" class="nav-item center-link">
             <a class="nav-link" href="#"> Login </a>
           </li>
-          <li onclick="showMenu()" class="nav-item">
+          <li onclick="showMenu()" class="nav-item center-link">
             <a class="nav-link register-btn" href="#"> Register </a>
           </li>
         </ul>
