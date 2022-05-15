@@ -14,8 +14,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
 
-  <script src="https://kit.fontawesome.com/025617722e.js" crossorigin="anonymous"></script>
-  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/025617722e.js" crossorigin="anonymous"></script>  
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
@@ -23,37 +24,45 @@
     <nav class="navbar">
       <a class="navbar-brand"><img src="images/logo.svg" alt="Snap"></a>
       <ul class="nav-list grow">
-          <li class="nav-item">
-            <details>
-              <summary>Features</summary>
-              <a href="#"><img src="images/icon-todo.svg" alt="Todo List"> Todo List</a>
-                <a href="#"><img src="images/icon-calendar.svg" alt="Calendar">Calendar</a>
-                <a href="#"><img src="images/icon-reminders.svg" alt="Reminders">Reminders</a>
-                <a href="#"><img src="images/icon-planning.svg" alt="Planning">Planning</a>
-            </details>
-          </li>
-          <li class="nav-item">
-            <details>
-              <summary>Company</summary>
-              <a href="#">History</a>
-                <a href="#">Our Team</a>
-                <a href="#">Blog</a>
-            </details>
-          </li>
-          <li onclick="showMenu()" class="nav-item">
-            <a class="nav-link" href="#"> Careers </a>
-          </li>
-          <li onclick="showMenu()" class="nav-item">
-            <a class="nav-link" href="#"> About </a>
-          </li>
-          <li onclick="showMenu()" class="nav-item center-link">
-            <a class="nav-link" href="#"> Login </a>
-          </li>
-          <li onclick="showMenu()" class="nav-item center-link">
-            <a class="nav-link register-btn" href="#"> Register </a>
-          </li>
+          <div class="nav-group">
+            <li class="nav-item">
+              <details>
+                <summary>Features</summary>
+                <div>
+                  <a href="#"><img src="images/icon-todo.svg" alt="Todo List"> Todo List</a>
+                  <a href="#"><img src="images/icon-calendar.svg" alt="Calendar">Calendar</a>
+                  <a href="#"><img src="images/icon-reminders.svg" alt="Reminders">Reminders</a>
+                  <a href="#"><img src="images/icon-planning.svg" alt="Planning">Planning</a>
+                </div>
+              </details>
+            </li>
+            <li class="nav-item">
+              <details>
+                <summary>Company</summary>
+                <div>
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </details>
+            </li>
+            <li onclick="showMenu()" class="nav-item">
+              <a class="nav-link" href="#"> Careers </a>
+            </li>
+            <li onclick="showMenu()" class="nav-item">
+              <a class="nav-link" href="#"> About </a>
+            </li>
+          </div>
+          <div class="nav-group">
+            <li onclick="showMenu()" class="nav-item center-link">
+              <a class="nav-link" href="#"> Login </a>
+            </li>
+            <li onclick="showMenu()" class="nav-item center-link">
+              <a class="nav-link register-btn" href="#"> Register </a>
+            </li>
+          </div>
         </ul>
-      <div class="menu-toggle">
+      <div onclick="showMenu()" class="menu-toggle">
         <div onclick="showMenu()" class="hamburger"></div>
       </div>
     </nav>
@@ -64,7 +73,7 @@
         <div class="text">
           <h1>Make remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-          <a class="cta-btn" href="#">Learn More</a>
+          <a class="cta-btn" href="#">Learn more</a>
         </div>
         <div class="clients">
           <img src="images/client-databiz.svg" alt="databiz">
