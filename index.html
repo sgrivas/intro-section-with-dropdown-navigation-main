@@ -53,17 +53,17 @@
               <a class="nav-link" href="#"> About </a>
             </li>
           </div>
-          <div class="nav-group">
-            <li onclick="showMenu()" class="nav-item center-link">
+          <div onclick="showMenu()" class="nav-group">
+            <li class="nav-item center-link">
               <a class="nav-link" href="#"> Login </a>
             </li>
-            <li onclick="showMenu()" class="nav-item center-link">
+            <li class="nav-item center-link">
               <a class="nav-link register-btn" href="#"> Register </a>
             </li>
           </div>
         </ul>
       <div onclick="showMenu()" class="menu-toggle">
-        <div onclick="showMenu()" class="hamburger"></div>
+        <div class="hamburger"></div>
       </div>
     </nav>
   </header>
@@ -85,12 +85,12 @@
       <div class="hero-image">
         <picture>
           <source 
-             media="(orientation: landscape)"
+             media="(min-width: 992px)"
              srcset="images/image-hero-desktop.png">
           <source 
              media="(orientation: portrait)"
              srcset="images/image-hero-mobile.png">
-        <img src="images/image-hero-mobile.png" width="100%" height="auto">
+          <img src="images/image-hero-mobile.png" width="100%" height="auto">
        </picture>
       </div>
     </div>

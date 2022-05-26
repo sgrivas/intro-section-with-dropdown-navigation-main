@@ -5,12 +5,14 @@ body {
   font-family: "Epilogue", sans-serif;
   text-decoration: none;
   background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
 }
 a,
 li,
 p,
 summary{
   font-size: 1rem;
+  line-height: 1.5;
 }
 /* Navigation */
 .navbar {
@@ -209,14 +211,11 @@ details img{
 }
 .hero-section h1 {
   font-weight: 700;
-  color: hsl(0, 0%, 8%);
   font-size: 2rem;
   padding: 20px 0;
 }
 .hero-section p {
   color: hsl(0, 0%, 41%);
-  font-size: 18px;
-  line-height: 1.5;
 }
 .hero-image {
   order: -1;
@@ -224,7 +223,6 @@ details img{
 @media screen and (min-width: 992px) {
   .hero-section {
     grid-template-columns: repeat(2, 1fr);
-    align-items: stretch;
     text-align: left;
     gap: 0 5%;
     margin: 7% 10%;
@@ -251,8 +249,7 @@ details img{
   border: 2px solid hsl(0, 0%, 8%);
   padding: 15px 25px;
   border-radius: 15px;
-  font-size: 18px;
-  margin: 30px 0;
+  margin: 8% 0;
   transition: .3s;
 }
 .cta-btn:hover{
@@ -267,24 +264,21 @@ details img{
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 0px 20px;
-  padding: 20px 0;
 }
 .clients img {
   max-width: 100%;
 }
 /* Footer */
 footer {
-  text-align: center;
   padding: 20px 0;
-  left: 0;
   bottom: 0;
   width: 100%;
   margin-top: 15%;
+  text-align: center;
 }
 footer p,
 footer a {
   font-size: 0.5rem;
   color: hsl(0, 0%, 41%);
-  line-height: 1.5;
 }
 
