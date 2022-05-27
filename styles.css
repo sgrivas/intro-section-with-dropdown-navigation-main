@@ -220,6 +220,10 @@ details img{
 .hero-image {
   order: -1;
 }
+.hero-image img{
+  width: 100%;
+  height: auto;
+}
 @media screen and (min-width: 992px) {
   .hero-section {
     grid-template-columns: repeat(2, 1fr);
