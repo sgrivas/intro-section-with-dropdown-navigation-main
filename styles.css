@@ -61,7 +61,8 @@ ul.nav-group {
   text-decoration: none;
 }
 .nav-item details a{
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .nav-item details a:hover{
   color: hsl(0, 0%, 8%);
@@ -69,7 +70,7 @@ ul.nav-group {
 .center-link{
   text-align: center;
 }
-.grow{
+.left-side{
   flex-grow: 2;
 }
 .nav-link:hover,
