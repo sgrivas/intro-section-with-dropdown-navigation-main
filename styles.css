@@ -26,6 +26,10 @@ summary{
   align-items: flex-start;
   box-sizing: border-box;
 }
+ul.nav-group {
+  list-style-type: none;
+  padding: 0;
+}
 .nav-list {
   list-style: none;
   position: fixed;
